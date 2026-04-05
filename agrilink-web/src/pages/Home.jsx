@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-
+import FeatureCard from "../components/FeatureCard";
 function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-slate-950 to-green-950 text-white">
@@ -50,6 +50,47 @@ function Home() {
             <p className="text-gray-300 mt-2">Total Trade Value</p>
           </div>
 
+        </div>
+      </section>
+            <section id="features" className="px-6 pb-20">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <p className="text-green-400 uppercase tracking-[0.3em] text-sm mb-3">
+            Core Features
+          </p>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Everything Farmers Need in One Platform
+          </h2>
+          <p className="text-gray-300 mt-4 max-w-3xl mx-auto">
+            AgriLink AI combines marketplace access, smart diagnostics,
+            waste monetization, price intelligence, and secure trade verification.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <FeatureCard
+            title="Crop Marketplace"
+            description="Sell and buy agricultural produce directly with better transparency and fairer pricing."
+          />
+          <FeatureCard
+            title="Waste Marketplace"
+            description="Monetize agricultural waste like stubble, husk, biomass, and organic by-products."
+          />
+          <FeatureCard
+            title="Disease Detection AI"
+            description="Upload crop images and symptoms to get instant AI-powered disease analysis and remedies."
+          />
+          <FeatureCard
+            title="Price Prediction AI"
+            description="Estimate future crop prices using smart market trend analysis and AI-based insights."
+          />
+          <FeatureCard
+            title="Secure Ledger"
+            description="Track verified transactions with a blockchain-inspired transparent transaction history."
+          />
+          <FeatureCard
+            title="Farmer Dashboard"
+            description="Manage listings, predictions, trade records, and insights from one modern dashboard."
+          />
         </div>
       </section>
     </div>
